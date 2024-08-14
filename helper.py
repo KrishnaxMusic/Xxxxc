@@ -60,7 +60,7 @@ async def send_vid(bot, m, cc, filename, thumb, name, prog, url, channel_id):
     xx = await bot.send_message(channel_id, f"**Generate Thumbnail** - `{name}`")
     await prog.delete(True)
     await xx.delete()  
-    reply = await bot.send_message(channel_id, f"**📩 Uploading 📩:-**\n\n**Name :-** `{name}\n🎥**Url -** `{url}`\n\nDRM Bot Made By 🔰 @I_AM_RADHA 🔰") 
+    reply = await bot.send_message(channel_id, f"**📤 𝐔𝙿𝙻𝙾𝙳𝙸𝙽𝙶 𝐁𝙰𝙱𝚄... 📤**\n\n**Name :-** `{name}\n\n🔗**Url -** `{url}`\n\n\n 𝐁𝐨𝐓 𝐌𝐚𝐝𝐞 𝐁𝐘 💫 @I_AM_RADHA 💫") 
     try:
         if thumb.startswith("http://") or thumb.startswith("https://"):
             getstatusoutput(f"wget '{thumb}' -O 'Local_thumb.jpg'")
@@ -131,7 +131,7 @@ async def merge_and_send_vid(bot, m, cc, name, prog, path, url, thumb, channel_i
     await xx.edit("Generate Thumbnail")
     await prog.delete(True)
     await xx.delete()  
-    reply = await bot.send_message(channel_id, f"**📩 Uploading 📩:-**\n\n**Name :-** `{name}\n🎥**Url -** `{url}`\n\nDRM Bot Made By 🔰 @I_AM_RADHA 🔰") 
+    reply = await bot.send_message(channel_id, f"**📤 𝐔𝙿𝙻𝙾𝙳𝙸𝙽𝙶 𝐁𝙰𝙱𝚄... 📤**\n\n**Name :-** `{name}\n\n🔗**Url -** `{url}`\n\n\n𝐁𝐨𝐓 𝐌𝐚𝐝𝐞 𝐁𝐘 💫 @I_AM_RADHA 💫") 
     try:
         if thumb.startswith("http://") or thumb.startswith("https://"):
             getstatusoutput(f"wget '{thumb}' -O 'Local_thumb.jpg'")
