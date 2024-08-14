@@ -27,7 +27,7 @@ logging.basicConfig(
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    await m.reply_text(f"👽**𝐇𝐥𝐨 𝐅𝐫𝐢𝐞𝐧𝐝👋**\n**🔵𝐈 𝐀𝐦 𝐓𝐗𝐓 𝐅𝐢𝐥𝐞 𝐃𝐨𝐰𝐧𝐥𝐨𝐝𝐞𝐫 𝐁𝐨𝐓🤖**\n\n**🔵𝐃𝐨 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐔𝐬𝐞✅ 𝐌𝐞 𝐒𝐞𝐧𝐝 ☞ /RADHA**\n**𝐈𝐟 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐒𝐭𝐨𝐩🚫 𝐒𝐞𝐧𝐝 ☞ /stop 🔵**\n\n**◄𝐒𝐮𝐩𝐩𝐨𝐫𝐭𝐢𝐧𝐠 𝐔𝐑𝐋 𝙾𝚁 𝐓𝐗𝐓►**\n-`𝙽𝙾𝙽 𝙳𝚁𝙼+𝙳𝚁𝙼`\n-`𝙼𝙿𝙴𝙶 𝙳𝙰𝚂𝙷 𝚄𝚁𝙻`\n-`𝙿𝙷𝚈𝚂𝙸𝙲𝚂𝚆𝙰𝙻𝙻𝙰𝙷`\n-`𝚅𝙸𝚂𝙸𝙾𝙽 𝙸𝙰𝚂`\n-`𝙰𝙻𝙻𝙴𝙽 𝙸𝙽𝚂𝙸𝚃𝚄𝚃𝙴`\n-`𝙲𝙻𝙰𝚂𝚂𝙿𝙻𝚄𝚂 𝚄𝚁𝙻`\n\n**𝐓𝐡𝐚𝐧𝐤𝐬 𝐅𝐨𝐫 𝐔𝐬𝐢𝐧𝐠 𝐌𝐄✨**\n\n**𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 »»** `@I_AM_RADHA`")
+    await m.reply_text(f"👽**𝐇𝐥𝐨 𝐅𝐫𝐢𝐞𝐧𝐝👋**\n\n**🔵𝐈 𝐀𝐦 𝐓𝐗𝐓 𝐅𝐢𝐥𝐞 𝐃𝐨𝐰𝐧𝐥𝐨𝐝𝐞𝐫 𝐁𝐨𝐓🤖**\n\n**🔵𝐈𝐟 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐔𝐬𝐞 𝐒𝐞𝐧𝐝 ☞ /RADHA**\n**🔵𝐈𝐟 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐒𝐭𝐨𝐩🚫 𝐒𝐞𝐧𝐝 ☞ /stop **\n\n**◄𝐒𝐮𝐩𝐩𝐨𝐫𝐭𝐢𝐧𝐠 𝐔𝐑𝐋 𝙾𝚁 𝐓𝐗𝐓►**\n-`𝙺𝙶𝚂` \n-`𝙼𝙿𝙴𝙶 𝙳𝙰𝚂𝙷 𝚄𝚁𝙻`\n-`𝙰𝙿𝙿𝚇`\n-`𝚅𝙸𝚂𝙸𝙾𝙽 𝙸𝙰𝚂`\n-`𝚁𝚆𝙰 𝚄𝚁𝙻`\n-`𝙲𝙻𝙰𝚂𝚂𝙿𝙻𝚄𝚂 𝚄𝚁𝙻`\n\n**𝐓𝐡𝐚𝐧𝐤𝐬 𝐅𝐨𝐫 𝐔𝐬𝐢𝐧𝐠 𝐌𝐄✨**\n\n**𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 »»** `@I_AM_RADHA`")
 
 
 @bot.on_message(filters.command("stop"))
