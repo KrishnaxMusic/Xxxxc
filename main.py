@@ -27,14 +27,14 @@ logging.basicConfig(
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    await m.reply_text(f"😈**Hi bruh!**\n**🟢I'm Alive You can Use by /RADHA**\n\n**<-URL Acceptable->**\n-`All Non-Drm+Drm Protected Url`\n-`Mpeg Dash Url`\n-`Vision IAS`\n-`PhysicsWallah`\n-`ClassPlus Url`\n-`Allen Institute`\n\n**Thanks for using me**\n\n**Developer -** `@I_AM_RADHA`")
+    await m.reply_text(f"👽**𝐇𝐥𝐨 𝐅𝐫𝐢𝐞𝐧𝐝👋**\n**🔵𝐈 𝐀𝐦 𝐓𝐗𝐓 𝐅𝐢𝐥𝐞 𝐃𝐨𝐰𝐧𝐥𝐨𝐝𝐞𝐫 𝐁𝐨𝐓🤖**\n\n**🔵𝐃𝐨 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐔𝐬𝐞✅ 𝐌𝐞 𝐒𝐞𝐧𝐝 ☞ /RADHA**\n**𝐈𝐟 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐒𝐭𝐨𝐩🚫 𝐒𝐞𝐧𝐝 ☞ /stop 🔵**\n\n**◄𝐒𝐮𝐩𝐩𝐨𝐫𝐭𝐢𝐧𝐠 𝐔𝐑𝐋 𝙾𝚁 𝐓𝐗𝐓►**\n-`𝙽𝙾𝙽 𝙳𝚁𝙼+𝙳𝚁𝙼`\n-`𝙼𝙿𝙴𝙶 𝙳𝙰𝚂𝙷 𝚄𝚁𝙻`\n-`𝙿𝙷𝚈𝚂𝙸𝙲𝚂𝚆𝙰𝙻𝙻𝙰𝙷`\n-`𝚅𝙸𝚂𝙸𝙾𝙽 𝙸𝙰𝚂`\n-`𝙰𝙻𝙻𝙴𝙽 𝙸𝙽𝚂𝙸𝚃𝚄𝚃𝙴`\n-`𝙲𝙻𝙰𝚂𝚂𝙿𝙻𝚄𝚂 𝚄𝚁𝙻`\n\n**𝐓𝐡𝐚𝐧𝐤𝐬 𝐅𝐨𝐫 𝐔𝐬𝐢𝐧𝐠 𝐌𝐄✨**\n\n**𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 »»** `@I_AM_RADHA`")
 
 
 @bot.on_message(filters.command("stop"))
 async def restart_handler(bot, m):
     if m.chat.id not in Config.VIP_USERS:
         print(f"User ID not in AUTH_USERS", m.chat.id)
-        await bot.send_message(m.chat.id, f"**Oopss! You are not a Premium member **\n\n**PLEASE UPGRADE YOUR PLAN**\n\n**/upgrade for Plan Details**\n**Send me your user id for authorization your User id** -     `{m.chat.id}`\n\n**Sab kuch free me chahiye kya **")
+        await bot.send_message(m.chat.id, f"**𝐎𝐨𝐩𝐩𝐬𝐬❗ \n**𝐘𝐨𝐮 𝐀𝐫𝐞 𝐍𝐨𝐭 𝐚 𝐏𝐫𝐞𝐦𝐢𝐮𝐦 𝐌𝐞𝐦𝐛𝐞𝐫😔 **\n\n**𝐏𝐥𝐞𝐚𝐬𝐞 𝐔𝐩𝐠𝐫𝐚𝐝𝐞 𝐘𝐨𝐮𝐫 𝐏𝐋𝐀𝐍💸**\n\n**/upgrade 𝐅𝐨𝐫 𝐏𝐋𝐀𝐍 𝐃𝐞𝐭𝐚𝐢𝐥𝐬 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐓𝐨 𝐎𝐰𝐧𝐞𝐫**\n**𝐒𝐞𝐧𝐝 𝐔𝐬𝐞𝐫 𝐈𝐃 𝐅𝐨𝐫 𝐀𝐔𝐓𝐇𝐎𝐑𝐈𝐙𝐀𝐓𝐈𝐎𝐍🔓** -     `{m.chat.id}`\n\n**𝚂𝙰𝙱 𝙺𝚄𝙲𝙷 𝙵𝚁𝙴𝙴 𝙽𝙷𝙸 𝙼𝙸𝙻𝙴𝙶𝙰 𝚂𝙾 𝙹𝙰𝙾 𝚃𝚄𝙼👀 **")
         return
     await m.reply_text("♦♦**𝐒𝐓𝐎𝐏𝐏𝐄𝐃**♦♦", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
@@ -74,7 +74,7 @@ async def account_login(bot: Client, m: Message):
         await editable.edit(f"🔻𝚃𝙾𝚃𝙰𝙻 𝐋𝐈𝐍𝐊𝐒🔗 𝙵𝙾𝚄𝙽𝙳 ⤇**{len(links)}**\n\n𝚂𝙴𝙽𝙳 𝙵𝚁𝙾𝙼 𝚆𝙷𝙴𝚁𝙴 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙳𝙴 𝙸𝙽𝚃𝙸𝙰𝙻 𝙸𝚂 ☞ **1**")
         if m.chat.id not in Config.VIP_USERS:
             print(f"User ID not in AUTH_USERS", m.chat.id)
-            await bot.send_message(m.chat.id, f"**𝐎𝐨𝐩𝐩𝐬𝐬❗𝐘𝐨𝐮 𝐀𝐫𝐞 𝐍𝐨𝐭 𝐚 𝐏𝐫𝐞𝐦𝐢𝐮𝐦 𝐌𝐞𝐦𝐛𝐞𝐫 **\n\n**𝐏𝐥𝐞𝐚𝐬𝐞 /UPGRADE 𝐘𝐨𝐮𝐫 𝐏𝐋𝐀𝐍💲**\n\n**𝐔𝐩𝐠𝐫𝐚𝐝𝐞 𝐅𝐨𝐫 𝐏𝐋𝐀𝐍 𝐃𝐞𝐭𝐚𝐢𝐥𝐬 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐭𝐨 𝐎𝐰𝐧𝐞𝐫 ☞ [@I_AM_RADHA]**\n**𝚂𝙴𝙽𝙳 𝙼𝙴 𝚈𝙾𝚄𝚁 𝚄𝚂𝙴𝚁 𝙸𝙳 𝙵𝙾𝚁 𝐀𝐔𝐓𝐇𝐎𝐑𝐈𝐙𝐀𝐓𝐈𝐎𝐍🔓** ☞  `{m.chat.id}`\n\n**𝚂𝙰𝙱 𝙺𝚄𝙲𝙷 𝙵𝚁𝙴𝙴 𝙲𝙷𝙰𝙷𝙸𝚈𝙴💰**")
+            await bot.send_message(m.chat.id, f"**𝐎𝐨𝐩𝐩𝐬𝐬❗𝐘𝐨𝐮 𝐀𝐫𝐞 𝐍𝐨𝐭 𝐚 𝐏𝐫𝐞𝐦𝐢𝐮𝐦 𝐌𝐞𝐦𝐛𝐞𝐫 **\n\n**𝐏𝐥𝐞𝐚𝐬𝐞 /UPGRADE 𝐘𝐨𝐮𝐫 𝐏𝐋𝐀𝐍💲**\n\n**𝐔𝐩𝐠𝐫𝐚𝐝𝐞 𝐅𝐨𝐫 𝐏𝐋𝐀𝐍 𝐃𝐞𝐭𝐚𝐢𝐥𝐬 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐭𝐨 𝐎𝐰𝐧𝐞𝐫 ☞ [@I_AM_RADHA]**\n**𝚂𝙴𝙽𝙳 𝙼𝙴 𝚈𝙾𝚄𝚁 𝚄𝚂𝙴𝚁 𝙸𝙳 𝙵𝙾𝚁 𝐀𝐔𝐓𝐇𝐎𝐑𝐈𝐙𝐀𝐓𝐈𝐎𝐍🔓** ☞  `{m.chat.id}`\n\n**𝚂𝙰𝙱 𝙺𝚄𝙲𝙷 𝙵𝚁𝙴𝙴 𝙽𝙷𝙸 𝙼𝙸𝙻𝙴𝙶𝙰 𝚂𝙾 𝙹𝙰𝙾 𝚃𝚄𝙼👀**")
             return
         input0: Message = await bot.listen(editable.chat.id)
         raw_text = input0.text
@@ -125,7 +125,7 @@ async def account_login(bot: Client, m: Message):
         try:
             await bot.send_message(chat_id=channel_id, text=f'🎯**Target Batch - {b_name}**')
         except Exception as e:
-            await m.reply_text(f"**Fail Reason »** {e}\n\n**Bot Made By** 🌟 @I_AM_RADHA 🌟")
+            await m.reply_text(f"**Fail Reason »** {e}\n\n**𝐁𝐎𝐓 𝐌𝐚𝐝𝐞 𝐁𝐘 »» 🌟 @I_AM_RADHA 🌟")
             return
         await editable.delete()
         if len(links) == 1:
@@ -179,8 +179,8 @@ async def account_login(bot: Client, m: Message):
             else:
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'    
             try:
-                cc = f'**[🎥]Vid Id  ➠** {str(count).zfill(3)}\n** Tᴏᴘɪᴄ ➠** {name1} [{raw_text2}] 🦋𝐑𝗔𝗗𝗛𝐀🦋 .mkv \n\n** Bᴀᴛᴄʜ Nᴀᴍᴇ ➠ ** {b_name}\n\n** 𝖠ᴘᴘ 𝖭ᴀᴍᴇ ➤ ** {app_name}\n\n** 🌟Dᴏᴡɴʟᴏᴀᴅ Bʏ ➤ {MR}**\n\n'
-                cc1 = f'**[📕]Pdf Id  ➠** {str(count).zfill(3)}\n** Tᴏᴘɪᴄ ➠** {name1} 🦋𝐑𝗔𝗗𝗛𝐀🦋 .pdf \n\n** Bᴀᴛᴄʜ Nᴀᴍᴇ ➠:** {b_name}\n\n** 𝖠ᴘᴘ 𝖭ᴀᴍᴇ ➤ ** {app_name}\n\n** 🌟Dᴏᴡɴʟᴏᴀᴅ Bʏ ➤ {MR}**\n\n'                   
+                cc = f'**[📺]𝐕𝐈𝐃 𝐈𝐃 ➤ ** {str(count).zfill(3)}\n\n**𝐓𝐎𝐏𝐈𝐂 ➤** {name1} [{raw_text2}] 🦋𝐑𝗔𝗗𝗛𝐀🦋 .mkv \n\n**𝐁𝐀𝐓𝐂𝐇 𝐍𝐀𝐌𝐄 ➤ ** {b_name}\n\n**𝐀𝐏𝐏 𝐍𝐀𝐌𝐄 ➤ ** {app_name}\n\n-═════━━━━❁━━━━═════-\n**⚡𝐃𝐨𝐰𝐧𝐋𝐎𝐃𝐄 𝐁𝐘 ➤ {MR}**\n-═════━━━━❁━━━━═════-'
+                cc1 = f'**[📘]𝐏𝐃𝐅 𝐈𝐃 ➤** {str(count).zfill(3)}\n\n**𝐓𝐎𝐏𝐈𝐂 ➤** {name1} 🦋𝐑𝗔𝗗𝗛𝐀🦋 .pdf \n\n**𝐁𝐀𝐓𝐂𝐇 𝐍𝐀𝐌𝐄 ➤** {b_name}\n\n**𝐀𝐏𝐏 𝐍𝐀𝐌𝐄 ➤ ** {app_name}\n\n-═════━━━━❁━━━━═════-\n**⚡𝐃𝐨𝐰𝐧𝐋𝐎𝐃𝐄 𝐁𝐘 ➤ {MR}**\n-═════━━━━❁━━━━═════-'                   
 
                 if "drive" in url or ".pdf" in url or "pdfs" in url:
                     try:
@@ -196,7 +196,7 @@ async def account_login(bot: Client, m: Message):
                         continue
 
                 elif mpd and keys:
-                    Show = f"**🤖 𝖣𝗈𝗐𝗇𝗅𝗈𝖺𝖽𝗂𝗇𝗀 𝖡𝗈𝗌𝗌 🤖:-**\n\n**Name :-** `{name}\n🎥**Url -** `{url}`\n🎥Video Quality - {raw_text2}\n\n Bot Made By  🌟 @I_AM_RADHA 🌟"
+                    Show = f"**📥 𝐃𝙾𝚆𝙽𝙻𝙾𝙳𝙸𝙽𝙶 𝐁𝙰𝙱𝚄... 📥**\n\n**📄𝐍𝐀𝐌𝐄 :-** `{name}\n\n**🔗𝐔𝐑𝐋 -** `{url}`\n\n🍀𝐐𝐔𝐀𝐋𝐈𝐓𝐘 - {raw_text2}\n\n 𝐁𝐎𝐓 𝐌𝐚𝐝𝐞 𝐁𝐘  🌟 @I_AM_RADHA 🌟"
                     prog = await bot.send_message(channel_id, Show)
                     await helper.download_and_dec_video(mpd, keys, path, name, raw_text2)
                     await prog.delete(True)
@@ -205,7 +205,7 @@ async def account_login(bot: Client, m: Message):
                     time.sleep(3)
                 else:
                     mpd = None
-                    Show = f"**🤖 𝖣𝗈𝗐𝗇𝗅𝗈𝖺𝖽𝗂𝗇𝗀 𝖡𝗈𝗌𝗌 🤖:-**\n\n**Name :-** `{name}\n🎥Video Quality - {raw_text2}\n\n Bot Made By  🌟 @I_AM_RADHA 🌟"
+                    Show = f"**📥 𝐃𝙾𝚆𝙽𝙻𝙾𝙳𝙸𝙽𝙶 𝐁𝙰𝙱𝚄... 📥**\n\n**📄𝐍𝐀𝐌𝐄 :-** `{name}\n🍀𝐐𝐔𝐀𝐋𝐈𝐓𝐘 - {raw_text2}\n\n 𝐁𝐎𝐓 𝐌𝐚𝐝𝐞 𝐁𝐘 🌟 @I_AM_RADHA 🌟"
                     prog = await bot.send_message(channel_id, Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -219,6 +219,6 @@ async def account_login(bot: Client, m: Message):
                 continue
         await bot.send_message(channel_id, " 🌟** Sᴜᴄᴄᴇsғᴜʟʟʏ Dᴏᴡɴʟᴏᴀᴅᴇᴅ Aʟʟ Lᴇᴄᴛᴜʀᴇs...! **🌟 ")
     except Exception as e:
-        await m.reply_text(f"**⚠️Sorry Boss Downloading Failed⚠️**\n\n**Fail Reason »** {e}\n\n**Bot Made By**  🌟 @I_AM_RADHA 🌟")
+        await m.reply_text(f"**⚠️Sorry Boss Downloading Failed⚠️**\n\n**Fail Reason »** {e}\n\n**𝐁𝐎𝐓 𝐌𝐚𝐝𝐞 𝐁𝐘**  🌟 @I_AM_RADHA 🌟")
         return
 bot.run()
