@@ -94,13 +94,13 @@ async def account_login(bot: Client, m: Message):
         app_name = input111.text
         await input111.delete(True)
 
-        await editable.edit("**𝙴𝙽𝚃𝙴𝚁 𝐑𝐞𝐬𝐨𝐥𝐮𝐭𝐢𝐨𝐧🍀 𝙾𝚁 𝐐𝐮𝐚𝐥𝐢𝐭𝐲🍀**\n\nEg - `360` or `480` or `720`**")
+        await editable.edit("**𝙴𝙽𝚃𝙴𝚁 𝐑𝐞𝐬𝐨𝐥𝐮𝐭𝐢𝐨𝐧🍀 𝙾𝚁 𝐐𝐮𝐚𝐥𝐢𝐭𝐲🍀**\n\n𝟑𝟔𝟎 𝐏𝐢𝐱𝐞𝐥 - `360`\n𝟒𝟖𝟎 𝐏𝐢𝐱𝐞𝐥 - `480`\n𝟕𝟐𝟎 𝐏𝐢𝐱𝐞𝐥 - `720`\n𝟏𝟎𝟖𝟎 𝐏𝐢𝐱𝐞𝐥 - `1080`**")
         input2: Message = await bot.listen(editable.chat.id)
         raw_text2 = input2.text
         await input2.delete(True)
 
 
-        await editable.edit("**Enter Your Channel Name or Owner Name**\n\nEg : Dᴏᴡɴʟᴏᴀᴅ Bʏ : `🦋𝐑𝗔𝗗𝗛𝐀🦋`")
+        await editable.edit("**𝙴𝙽𝚃𝙴𝚁 𝐎𝐖𝐍𝐄𝐑👀 𝙽𝙰𝙼𝙴**\n\n𝙴𝙶: 𝙳𝙾𝚆𝙽𝙻𝙾𝙳𝙴 𝙱𝚈 ☞`🦋𝐑𝗔𝗗𝗛𝐀🦋`")
         input3: Message = await bot.listen(editable.chat.id)
         raw_text3 = input3.text
         await input3.delete(True)
@@ -109,19 +109,19 @@ async def account_login(bot: Client, m: Message):
         else:               
             MR = raw_text3
     
-        await editable.edit("Now send the **Thumb URL**\nEg : `https://telegra.ph/file/0eca3245df8a40c7e68d4.jpg`\n\nor Send `no`")
+        await editable.edit("𝚂𝙴𝙽𝙳 𝐓𝐡𝐮𝐦𝐛 𝐔𝐑𝐋🌄 **\n𝙴𝙶 : `https://telegra.ph/file/167b77f14fcccea730820.jpg`\n\𝙽𝙾𝚃 𝚂𝚎𝚗𝚍 ☞ `no`")
         input6: Message = await bot.listen(editable.chat.id)
         thumb = input6.text
         await input6.delete(True)
         
-        await editable.edit("**Please Provide Channel id or where you want to Upload video or Sent Video otherwise `/d` **\n\n**And make me admin in this channel then i can able to Upload otherwise i can't**")
+        await editable.edit("**𝙿𝙻𝙴𝙰𝚂𝙴 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝐂𝐡𝐡𝐚𝐧𝐞𝐥 𝐈𝐃 𝙴𝙶 -100xxxxxx𝚡𝚡x 𝙾𝚁 𝚆𝙷𝙴𝚁𝙴 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙾 𝚄𝙿𝙻𝙾𝙳𝙴 𝚅𝙸𝙳𝙴𝙾 𝙾𝚁 𝚂𝙴𝙽𝚃 𝚅𝙸𝙳𝙴𝙾 𝐎𝐭𝐡𝐞𝐫𝐰𝐢𝐬𝐞 ☞ `/d` **\n\n**𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽 𝙸𝙽 𝚃𝙷𝙸𝚂 𝙲𝙷𝙷𝙰𝙽𝙴𝙻 𝚃𝙷𝙴𝙽 𝙸 𝙲𝙰𝙽 𝙰𝙱𝙻𝙴 𝚃𝙾 𝚄𝙿𝙻𝙾𝙳𝙴 𝙾𝚃𝙷𝙴𝚁𝚆𝙸𝚂𝙴 𝙸 𝙲𝙰𝙽'𝚃😔**")
         input7: Message = await bot.listen(editable.chat.id)
         if "/d" in input7.text:
             channel_id = m.chat.id
         else:
             channel_id = input7.text
         await input7.delete()
-        await editable.edit("**Dost mera time aa gya mai chala\n\nTum apna dekh lo**")
+        await editable.edit("**𝙳𝙾𝚂𝚃 𝚃𝚄𝙼𝙷𝙴 𝙺𝚄𝙲𝙷 𝙷𝚄𝙰 𝙺𝚈𝙰😉\n\n𝙺𝚄𝙲𝙷 𝙿𝚁𝙾𝙱𝙻𝙴𝙼 𝙷𝚄𝙸😒**")
         try:
             await bot.send_message(chat_id=channel_id, text=f'🎯**Target Batch - {b_name}**')
         except Exception as e:
