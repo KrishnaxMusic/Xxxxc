@@ -36,14 +36,14 @@ async def restart_handler(bot, m):
         print(f"User ID not in AUTH_USERS", m.chat.id)
         await bot.send_message(m.chat.id, f"**Oopss! You are not a Premium member **\n\n**PLEASE UPGRADE YOUR PLAN**\n\n**/upgrade for Plan Details**\n**Send me your user id for authorization your User id** -     `{m.chat.id}`\n\n**Sab kuch free me chahiye kya **")
         return
-    await m.reply_text("🚦**STOPPED**🚦", True)
+    await m.reply_text("♦♦**𝐒𝐓𝐎𝐏𝐏𝐄𝐃**♦♦", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
 @bot.on_message(filters.command(["RADHA"]))
 async def account_login(bot: Client, m: Message):
     try:
-        editable = await m.reply_text('**Send 🗂️TXT🗂️ file for download**')
+        editable = await m.reply_text('**🔻𝚂𝙴𝙽𝙳 𝐓𝐗𝐓💾 𝙵𝙸𝙻𝙴 𝙵𝙾𝚁 𝙳𝙾𝚆𝙽𝙻𝙾𝙳𝙴...**')
         input: Message = await bot.listen(editable.chat.id)
         path = f"./downloads/{m.chat.id}"
         temp_dir = "./temp"
@@ -71,16 +71,16 @@ async def account_login(bot: Client, m: Message):
             content = content.split("\n")
             links = [i.split("://", 1) for i in content]
             await input.delete(True)
-        await editable.edit(f"Total links🔗 found are **{len(links)}**\n\nSend From where you want to download initial is **1**")
+        await editable.edit(f"🔻𝚃𝙾𝚃𝙰𝙻 𝐋𝐈𝐍𝐊𝐒🔗 𝙵𝙾𝚄𝙽𝙳 ⤇**{len(links)}**\n\n𝚂𝙴𝙽𝙳 𝙵𝚁𝙾𝙼 𝚆𝙷𝙴𝚁𝙴 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙳𝙴 𝙸𝙽𝚃𝙸𝙰𝙻 𝙸𝚂 ☞ **1**")
         if m.chat.id not in Config.VIP_USERS:
             print(f"User ID not in AUTH_USERS", m.chat.id)
-            await bot.send_message(m.chat.id, f"**Oopss! You are not a Premium member **\n\n**PLEASE UPGRADE YOUR PLAN**\n\n**/upgrade for Plan Details**\n**Send me your user id for authorization your User id** -     `{m.chat.id}`\n\n**Sab kuch free me chahiye kya **")
+            await bot.send_message(m.chat.id, f"**𝐎𝐨𝐩𝐩𝐬𝐬❗𝐘𝐨𝐮 𝐀𝐫𝐞 𝐍𝐨𝐭 𝐚 𝐏𝐫𝐞𝐦𝐢𝐮𝐦 𝐌𝐞𝐦𝐛𝐞𝐫 **\n\n**𝐏𝐥𝐞𝐚𝐬𝐞 /UPGRADE 𝐘𝐨𝐮𝐫 𝐏𝐋𝐀𝐍💲**\n\n**𝐔𝐩𝐠𝐫𝐚𝐝𝐞 𝐅𝐨𝐫 𝐏𝐋𝐀𝐍 𝐃𝐞𝐭𝐚𝐢𝐥𝐬 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐭𝐨 𝐎𝐰𝐧𝐞𝐫 ☞ [@I_AM_RADHA]**\n**𝚂𝙴𝙽𝙳 𝙼𝙴 𝚈𝙾𝚄𝚁 𝚄𝚂𝙴𝚁 𝙸𝙳 𝙵𝙾𝚁 𝐀𝐔𝐓𝐇𝐎𝐑𝐈𝐙𝐀𝐓𝐈𝐎𝐍🔓** ☞  `{m.chat.id}`\n\n**𝚂𝙰𝙱 𝙺𝚄𝙲𝙷 𝙵𝚁𝙴𝙴 𝙲𝙷𝙰𝙷𝙸𝚈𝙴💰**")
             return
         input0: Message = await bot.listen(editable.chat.id)
         raw_text = input0.text
         await input0.delete(True)
 
-        await editable.edit("**Enter Batch Name or send /d for grabbing from text filename.**")
+        await editable.edit("**𝙴𝙽𝚃𝙴𝚁 𝐁𝐀𝐓𝐂𝐇📄 𝙽𝙰𝙼𝙴 𝑶𝑹 𝚂𝙴𝙽𝙳 ☞ /d 𝙵𝙾𝚁 𝙶𝚁𝙰𝙱𝙱𝙸𝙽𝙶 𝙵𝚁𝙾𝙼 𝚃𝙴𝚇𝚃 𝙵𝙸𝙻𝙴𝙽𝙰𝙼𝙴.**")
         input1: Message = await bot.listen(editable.chat.id)
         raw_text0 = input1.text
         await input1.delete(True)
@@ -89,12 +89,12 @@ async def account_login(bot: Client, m: Message):
         else:
             b_name = raw_text0
             
-        await editable.edit("**Enter App Name **")
+        await editable.edit("**𝙴𝙽𝚃𝙴𝚁 𝐀𝐩𝐩𝐥𝐢𝐜𝐚𝐭𝐢𝐨𝐧🎓 𝙾𝚁 𝐂𝐨𝐚𝐜𝐡𝐢𝐧𝐠🎓 𝙽𝙰𝙼𝙴 **")
         input111: Message = await bot.listen(editable.chat.id)
         app_name = input111.text
         await input111.delete(True)
 
-        await editable.edit("**Enter resolution or Video Quality**\n\nEg - `360` or `480` or `720`**")
+        await editable.edit("**𝙴𝙽𝚃𝙴𝚁 𝐑𝐞𝐬𝐨𝐥𝐮𝐭𝐢𝐨𝐧🍀 𝙾𝚁 𝐐𝐮𝐚𝐥𝐢𝐭𝐲🍀**\n\nEg - `360` or `480` or `720`**")
         input2: Message = await bot.listen(editable.chat.id)
         raw_text2 = input2.text
         await input2.delete(True)
